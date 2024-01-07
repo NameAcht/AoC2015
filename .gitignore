@@ -1,0 +1,10 @@
+# Ignore everything
+/*
+
+# Allow git things
+!.gitattributes
+!.gitignore
+
+# Allow .cs files in the AoC2015 directory
+!/AoC2015/
+/AoC2015/**/
