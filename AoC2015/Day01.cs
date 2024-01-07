@@ -6,17 +6,10 @@
         public static int Part2(string input)
         {
             int floor = 0;
-            for (int i = 0; i < input.Length; i++)
-            {
-                if (input[i] == '(')
-                    floor++;
-                else
-                    floor--;
-
-                if (floor < 0)
-                    return i + 1;
-            }
-            return floor;
+            int i = 0;
+            for (i = 0; floor >= 0; i++)
+                floor += input[i] == '(' ? 1 : -1;
+            return i;
         }
     }
 }

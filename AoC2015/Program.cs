@@ -1,15 +1,11 @@
-﻿using System.Net.Http;
-using System.Web;
-using System.Runtime.CompilerServices;
-
-namespace AoC2015
+﻿namespace AoC2015
 {
     internal class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
-            var input = File.ReadAllText("input04.txt");
-            Console.WriteLine(Day04.Part2(input));
+            var input = File.ReadAllLines("input05.txt");
+            Console.WriteLine(Day05.Part2(input));
         }
     }
 }

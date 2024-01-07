@@ -18,7 +18,7 @@ namespace AoC2015
         public static int Part2(string[] input)
         {
             int sum = 0;
-            foreach(var line in input)
+            foreach (var line in input)
             {
                 var nums = line.Split('x').ToList().ConvertAll(int.Parse);
                 nums.Sort();
